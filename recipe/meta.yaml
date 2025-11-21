@@ -1,5 +1,5 @@
 {% set name = "brotlicffi" %}
-{% set version = "1.1.0.0" %}
+{% set version = "1.2.0.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b77827a689905143f87915310b93b273ab17888fd43ef350d4832c4a71083c13
+  sha256: 34345d8d1f9d534fcac2249e57a4c3c8801a33c9942ff9f8574f67a175e17adb
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
